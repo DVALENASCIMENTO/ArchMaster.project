@@ -1,0 +1,100 @@
+/* Reset básico */
+body, h1, h2, p, textarea, input, pre {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+form section {
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+pre {
+    background: #f1f1f1;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+aside {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+#info-content {
+    display: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#info-btn {
+    background: #28a745;
+    border: none;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#info-close {
+    background: #dc3545;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+    }
+}

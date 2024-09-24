@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Documento de Arquitetura de Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Documento de Arquitetura de Software</h1>
+    </header>
+    
+    <main>
+        <form id="architecture-form">
+            <!-- Seções do formulário -->
+            <section>
+                <h2>1. Visão Geral do Projeto</h2>
+                <label for="project-name">Nome do Projeto:</label>
+                <input type="text" id="project-name" required>
+                
+                <label for="project-description">Descrição Geral:</label>
+                <textarea id="project-description" rows="4" required></textarea>
+                
+                <label for="stakeholders">Stakeholders:</label>
+                <textarea id="stakeholders" rows="4"></textarea>
+                
+                <label for="scope">Escopo:</label>
+                <textarea id="scope" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>2. Requisitos do Sistema</h2>
+                <label for="functional-requirements">Requisitos Funcionais:</label>
+                <textarea id="functional-requirements" rows="4"></textarea>
+                
+                <label for="non-functional-requirements">Requisitos Não Funcionais:</label>
+                <textarea id="non-functional-requirements" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>3. Arquitetura de Alto Nível</h2>
+                <label for="components-diagram">Diagrama de Componentes:</label>
+                <textarea id="components-diagram" rows="4"></textarea>
+                
+                <label for="layer-vision">Visão de Camadas:</label>
+                <textarea id="layer-vision" rows="4"></textarea>
+                
+                <label for="technologies">Principais Tecnologias Utilizadas:</label>
+                <textarea id="technologies" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>4. Detalhamento da Arquitetura</h2>
+                <label for="frontend">Front-end:</label>
+                <textarea id="frontend" rows="4"></textarea>
+                
+                <label for="backend">Back-end:</label>
+                <textarea id="backend" rows="4"></textarea>
+                
+                <label for="database">Banco de Dados:</label>
+                <textarea id="database" rows="4"></textarea>
+                
+                <label for="apis">Integração e APIs:</label>
+                <textarea id="apis" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>5. Diagrama de Sequência</h2>
+                <label for="sequence-diagram">Fluxo Principal:</label>
+                <textarea id="sequence-diagram" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>6. Estrutura do Projeto</h2>
+                <textarea id="project-structure" rows="10">
+
+                </textarea>
+            </section>
+            
+
+            <section>
+                <h2>7. Padrões e Convenções</h2>
+                <label for="coding-standards">Padrões de Codificação:</label>
+                <textarea id="coding-standards" rows="4"></textarea>
+                
+                <label for="version-control">Controle de Versão:</label>
+                <textarea id="version-control" rows="4"></textarea>
+                
+                <label for="ci-cd">CI/CD:</label>
+                <textarea id="ci-cd" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>8. Segurança</h2>
+                <label for="authentication">Autenticação e Autorização:</label>
+                <textarea id="authentication" rows="4"></textarea>
+                
+                <label for="data-protection">Proteção de Dados:</label>
+                <textarea id="data-protection" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>9. Escalabilidade e Performance</h2>
+                <label for="scalability">Escalabilidade Horizontal/Vertical:</label>
+                <textarea id="scalability" rows="4"></textarea>
+                
+                <label for="caching">Caching:</label>
+                <textarea id="caching" rows="4"></textarea>
+                
+                <label for="monitoring">Monitoramento:</label>
+                <textarea id="monitoring" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>10. Plano de Contingência</h2>
+                <label for="disaster-recovery">Recuperação de Desastres:</label>
+                <textarea id="disaster-recovery" rows="4"></textarea>
+                
+                <label for="backups">Backups:</label>
+                <textarea id="backups" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>11. Considerações Finais</h2>
+                <label for="next-steps">Próximos Passos:</label>
+                <textarea id="next-steps" rows="4"></textarea>
+                
+                <label for="conclusion">Conclusão:</label>
+                <textarea id="conclusion" rows="4"></textarea>
+            </section>
+
+            <button type="button" id="generate-pdf">Gerar PDF</button>
+        </form>
+    </main>
+
+    <aside id="info">
+        <button id="info-btn">?</button>
+        <div id="info-content">
+            <h2>Sobre Arquitetura de Software</h2>
+            <p>A Arquitetura de Software é a estrutura organizacional fundamental de um sistema, estabelecida por meio das suas principais componentes e das suas interações. Ela define as diretrizes e decisões essenciais para o desenvolvimento de software, assegurando que o sistema seja eficiente, escalável, seguro e que atenda às necessidades dos stakeholders.</p>
+            <ul>
+                <li><strong>Visão Geral:</strong> Inclui a descrição do projeto, stakeholders e escopo.</li>
+                <li><strong>Requisitos:</strong> Funcionais e não funcionais do sistema.</li>
+                <li><strong>Arquitetura de Alto Nível:</strong> Diagrama de componentes e visão de camadas.</li>
+                <li><strong>Detalhamento:</strong> Front-end, back-end, banco de dados e integração com APIs.</li>
+                <li><strong>Diagrama de Sequência:</strong> Fluxos principais e interação entre componentes.</li>
+                <li><strong>Estrutura do Projeto:</strong> Organização de diretórios e arquivos.</li>
+                <li><strong>Padrões e Convenções:</strong> Padrões de codificação, controle de versão e CI/CD.</li>
+                <li><strong>Segurança:</strong> Autenticação, autorização e proteção de dados.</li>
+                <li><strong>Escalabilidade e Performance:</strong> Estratégias de escalabilidade e performance.</li>
+                <li><strong>Plano de Contingência:</strong> Recuperação de desastres e backups.</li>
+                <li><strong>Considerações Finais:</strong> Próximos passos e conclusões.</li>
+            </ul>
+            <button id="info-close">Fechar</button>
+        </div>
+    </aside>
+
+    <footer>
+        <p>Diego Nascimento - Analista e Desenvolvedor de Sistemas</p>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/diego-vale-do-nascimento-48212215b/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/DiegoValeNascimento" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
