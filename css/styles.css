@@ -22,34 +22,39 @@ header {
 .intro-section {
     background-color: #1C1C1C; /* Fundo escuro */
     color: #FFFFFF; /* Texto branco em contraste */
-    text-align: center;
+    display: flex; /* Usar Flexbox */
+    align-items: center; /* Alinhar verticalmente */
     padding: 50px 20px;
+    justify-content: center; /* Alinhar conteúdo ao centro */
 }
 
 .intro-section .logo {
     max-width: 150px;
-    margin-bottom: 20px;
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transição suave para transformações */
+}
+
+.intro-section .logo:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Organizar h1 e p em coluna */
+    align-items: center; /* Centralizar h1 e p em relação um ao outro */
+}
+
+
+.intro-section h1 {
+    font-size: 2rem; /* Ajustar o tamanho do título se necessário */
+    margin-right: 10px; /* Espaçamento entre o título e o parágrafo */
 }
 
 .intro-section p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.intro-section .start-button {
-    background-color: #0056A6; /* Azul Profundo (Cor Primária) */
-    color: #FFFFFF; /* Texto branco para o botão */
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.intro-section .start-button:hover {
-    background-color: #00BFFF; /* Azul Claro ao passar o mouse */
-    color: #000000; /* Texto preto no hover */
+    margin-bottom: 0; /* Remover a margem inferior */
 }
 
 
@@ -72,13 +77,21 @@ label {
 
 textarea, input[type="text"] {
     width: 100%;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
     padding: 0.5em;
     border: 1px solid #00BFFF; /* Azul Claro (Cor de Acento) */
     border-radius: 4px;
 }
 
 textarea {
+    overflow: hidden; /* Esconde a barra de rolagem */
     resize: vertical;
+    min-height: 50px; /* Altura mínima do textarea */
+}
+
+/* Adiciona uma classe para inputs que precisam de ajuste automático */
+.auto-expand {
+    overflow: hidden; /* Esconde a barra de rolagem */
 }
 
 pre {
