@@ -47,3 +47,14 @@ document.getElementById('info-btn').addEventListener('click', () => {
 document.getElementById('info-close').addEventListener('click', () => {
     document.getElementById('info-content').style.display = 'none';
 });
+
+// Função para rolar até o conteúdo principal
+function scrollToContent() {
+    // Seleciona o formulário (ou o elemento que será o ponto de chegada)
+    const mainContent = document.querySelector('main');
+    
+    // Usa scrollIntoView para rolar até a seção principal
+    mainContent.scrollIntoView({
+        behavior: 'smooth' // Rolagem suave
+    });
+}
