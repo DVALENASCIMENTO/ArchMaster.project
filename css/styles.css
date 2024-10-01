@@ -87,7 +87,10 @@ textarea {
     overflow: hidden; /* Esconde a barra de rolagem */
     resize: vertical;
     min-height: 50px; /* Altura mínima do textarea */
+    white-space: pre-wrap; /* Preserva quebras de linha */
+    word-wrap: break-word; /* Quebra palavras longas */
 }
+
 
 /* Adiciona uma classe para inputs que precisam de ajuste automático */
 .auto-expand {
